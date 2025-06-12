@@ -10,9 +10,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
+        body: ['"Source Code Pro"', 'monospace'],
+        headline: ['"Source Code Pro"', 'monospace'],
+        code: ['"Source Code Pro"', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -88,10 +88,15 @@ export default {
             height: '0',
           },
         },
+        'band-flash': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'band-flash': 'band-flash 0.3s ease-in-out',
       },
     },
   },
